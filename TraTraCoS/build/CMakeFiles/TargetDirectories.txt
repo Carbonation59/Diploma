@@ -1,3 +1,0 @@
-/opt/arch/build/CMakeFiles/project1.dir
-/opt/arch/build/CMakeFiles/edit_cache.dir
-/opt/arch/build/CMakeFiles/rebuild_cache.dir
