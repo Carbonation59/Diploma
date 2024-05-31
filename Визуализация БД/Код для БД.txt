@@ -1,0 +1,26 @@
+Table Switches{
+  id_switch integer [primary key]
+  time_zone integer
+}
+
+Table CDRs{
+  id integer [primary key]
+  cur_time bigint
+  duration_time integer
+  number_from varchar(11)
+  number_to varchar(11)
+  id_in_trunk integer
+  id_out_trunk integer
+}
+
+Table Trunks{
+  id integer [primary key]
+  id_switch integer
+  id_remote_switch integer
+  distance integer
+}
+
+Ref: CDRs.id_in_trunk > Trunks.id // many-to-one
+Ref: CDRs.id_out_trunk > Trunks.id // many-to-one
+Ref: Trunks.id_switch > Switches.id_switch // many-to-one
+Ref: Trunks.id_remote_switch > Switches.id_switch // many-to-one
