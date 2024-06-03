@@ -33,8 +33,11 @@
 ## How to run
 
 > ...\build> cmake ..
+
 > ...\build> make
+
 > ...\build> cd ..
+
 > ...\> ./start.sh
 
 
